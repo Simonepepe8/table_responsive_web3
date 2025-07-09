@@ -1,0 +1,167 @@
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.table-container {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+select {
+  margin-bottom: 10px;
+}
+table {
+  width: 100%;
+  background-color: #FFD700;
+  color: #000000;
+  border-collapse: collapse;
+  table-layout: auto; /* เปลี่ยนจาก fixed เป็น auto */
+  max-width: 100%;
+}
+
+th, td {
+  overflow: hidden;
+  word-break: break-word;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  th {
+    font-size: 0.95rem;
+    font-weight: bold;
+    background: #FFD700;
+    color: #000000;
+    padding: 6px 4px;
+    word-break: break-word;
+    text-align: center;
+  }
+  td {
+    font-size: 0.93rem;
+    padding: 6px 4px;
+    word-break: break-word;
+    text-align: center;
+  }
+  .table-container,
+  table,
+  input,
+  select,
+  button {
+    max-width: 100%;
+    width: 100%;
+    font-size: 0.95rem;
+  }
+  body {
+    padding: 8px;
+  }
+}
+header-actions {
+  float: right;
+  margin-top: -50px;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+.btn-add {
+  background-color: #FFD700;
+  color: rgb(0, 0, 0);
+}
+.btn-add:hover {
+  background-color: #e6c200;
+}
+.btn-logout {
+  background-color: #FF6347;
+  color: rgb(255, 255, 255);
+}
+.btn-logout:hover {
+  background-color: #e65c3d;
+}
+.btn-table {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 2px;
+}
+.btn-edit {
+  background-color: #4CAF50;
+  color: white;
+}
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form input,
+.form select {
+  width: 100%;
+  padding: 8px;
+  max-width: 400px;
+}
+.alert.success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.alert.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.dashboard-add {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-employee {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+button[type="buttonadd"] {
+  width: 100%;
+  max-width: 140px;
+}
